@@ -1,5 +1,6 @@
-import React, {useState} from 'react'
-import './hero.css'
+import React, {useState} from 'react';
+import hero_image from '../../images/AbrahamLincoln-Before-and-After.webp';
+import './hero.css';
 
 const hero = () => {
     
@@ -37,11 +38,12 @@ const hero = () => {
         <div className='main-section'>
             <div className='title'>
                 <h1>Colorify</h1>
-                <p>Automatic, no sign-up & FREE!</p>
+                <p>Automatic, no sign-up & FREE !</p>
+                <img src={hero_image} alt="grayscale to color"/>
             </div>
 
             <form onSubmit={handleSubmit}>
-                <h3>Upload a image</h3>
+                <h3>Upload an image</h3>
                 <input type="file" onChange={handleChange} />
                 <button type="submit">Colorify</button>
             </form>
