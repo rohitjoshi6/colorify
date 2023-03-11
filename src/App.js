@@ -1,10 +1,19 @@
 import './App.css';
-import Hero from './components/hero-section/hero.jsx';
+import Result from './components/Result/Result.jsx';
+import Navbar from './components/Navbar/Navbar';
+import ImageForm from './components/ImageForm/ImageForm';
+import { useState } from 'react';
 
-function App() {
+const App = () => {
+
+  const [bwImg, setBwImg] = useState(null);
+  const [cImg, setCImg] = useState(null);
+
   return (
     <div className="App">
-      <Hero/>
+      <Navbar/>
+      <Result state = {{bwImg, cImg}} />
+      <ImageForm state = {{setBwImg, setCImg}}/>
     </div>
   );
 }

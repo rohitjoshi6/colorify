@@ -1,0 +1,36 @@
+
+.main-section{
+    /* height: 80vh; */
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(236, 247, 255);
+}
+
+.user-image{
+    border: 3px solid black;
+}
+
+.arrow-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.arrow-image{
+    height: 75px;
+    width: 75px;
+}
+
+.caption{
+    font-size: 32px;
+    padding: 10px;
+    color: black;
+}
+
+.user-image{
+    width: 500px;
+    height: 500px;
+}
